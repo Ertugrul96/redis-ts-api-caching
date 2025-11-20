@@ -1,8 +1,14 @@
-# ElastiCache Redis & TypeScript Lambda - API caching demo
+# High-Performance Caching API with Redis and TypeScript (Ertugrul Update)
 
-This repository contains an example of using in serverless application Redis to cache external API responses. 
+This repository demonstrates the implementation of a **Cache-Aside** strategy using **Redis** for high-speed data retrieval in a modern API. Built with **TypeScript** and designed to be deployed as a serverless (Lambda) function, this project emphasizes performance and scalability.
 
-Code source is a part of my [Dev.to article](https://dev.to/luafanti/api-caching-with-elasticache-redis-aws-lambda-82c) in which you can fine more info about the solution. 
+### 🛠️ Key Technologies & Architectural Focus
+
+* **Caching Layer:** **Redis** (Used for microsecond-latency data caching.)
+* **Language & Runtime:** **TypeScript** on Node.js (Ensuring type safety and maintainability.)
+* **Architecture:** Serverless (AWS Lambda) - Demonstrates cloud-native deployment.
+* **Keyword Strategy:** The structure is fully compatible with integration with persistent data stores like **PostgreSQL (SQL)**, **MongoDB (NoSQL)**, and event streaming platforms such as **Kafka** for large-scale microservice communication. This shows a holistic system design approach.
+
 ## Deployment Overview
 
 The infrastructure in demo is provisioned using the CloudFormation template. The stack created with the default parameters will provide the following resources:
